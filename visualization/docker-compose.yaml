@@ -1,0 +1,19 @@
+version: "3.4"
+
+networks:
+  grafana:
+
+services:
+  influxdb:
+    image: influxdb:2.7
+    networks:
+      - grafana
+    ports:
+      - "8086:8086"
+
+  grafana:
+    image: grafana/grafana:10.4.0
+    networks:
+      - grafana
+    ports:
+      - "3303:3000"

@@ -6,7 +6,7 @@ import { deleteBookScenario } from "./src/scenarios/deleteBook.scenario.js";
 import { compositeScenario } from "./src/scenarios/composite.scenario.js";
 
 const stages = [
-    { duration: "60s", target: 5 },
+    { duration: "120s", target: 5 },
     // { duration: "15m", target: 15 },
     // { duration: "15m", target: 30 },
     // { duration: "10m", target: 10 },
